@@ -57,10 +57,10 @@ p{
     
 }
 
-.textoIgsGrandes {
+.textoImgsGrandes {
     width: var(--ancho_elementos_movil);
 }
-.textoIgsGrandes > p{
+.textoImgsGrandes > p{
     text-align: justify;
 }
 
@@ -200,6 +200,7 @@ color: black;
         flex-direction: row;
         gap: 40px;
         justify-content: center;
+
     }
 
     .textoImgsGrandes{
@@ -208,7 +209,7 @@ color: black;
         
     }
 
-    .textoIgsGrandes{
+    .textoImgsGrandes{
         line-height: 2;
     }
 

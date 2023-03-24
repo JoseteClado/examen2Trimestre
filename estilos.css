@@ -1,0 +1,256 @@
+:root{
+    --color_fondoNavFoot: #D9D9D9;
+
+    --altura_imagenLarga_sectionConjuntoImgs_movil: 600px;
+    --altura_imagenPeque_sectionConjuntoImgs_movil: 261px;
+
+    --ancho_elementos_escritorio_sectionConjuntoImgs: 240px;
+
+    --altura_imgPeque_escritorio: 200px;
+    --altura_imgLarga_escritorio: 500px;
+
+    --ancho_elementos_movil: 265px;
+
+    --altura_sectionImgsGrandes_movil: 542px;
+
+    --altura_icono: 50px;
+    --ancho_icono: 50px;
+
+}
+
+
+body{
+    max-width: 1366px;
+    margin: 0 auto;
+    background-color: white;
+    
+}
+ 
+p{
+    font-family: sans-serif;
+}
+
+.navbarMovil{
+    display: flex;
+    background-color: var(--color_fondoNavFoot);
+    justify-content: space-around;
+    padding: 10px 0;
+    align-items: center;
+    width: 100%;
+}
+
+.navbarMovil > a{
+    text-decoration: none;
+    color: black;
+}
+
+.logoMovil{
+    height: var(--altura_icono);
+    width: var(--ancho_icono);
+}
+
+.imgsGrandes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    
+}
+
+.textoIgsGrandes {
+    width: var(--ancho_elementos_movil);
+}
+.textoIgsGrandes > p{
+    text-align: justify;
+}
+
+
+.imgGrande{
+    width: var(--ancho_elementos_movil);
+    height: var(--altura_sectionImgsGrandes_movil);
+}
+.imgGrande1{
+    background-image: url('./imgs/imgsMovil/imgGrande.webp');
+}
+
+.imgGrande2{
+    background-image: url('./imgs/imgsMovil/imgGrande-1.webp');
+}
+
+.imgMasTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+
+.imgTexto{
+    width: var(--ancho_elementos_movil);
+    height: 252px;
+    background-image: url('./imgs/imgsMovil/imgTexto.webp');
+}
+
+.textoImgTexto{
+    width: 265px;
+    
+}
+.textoImgTexto >p{
+    text-align: justify;
+}
+
+
+
+.conjuntoImagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    gap: 50px;
+}
+
+.imagenPeque{
+    height: var(--altura_imagenPeque_sectionConjuntoImgs_movil);
+    width: var(--ancho_elementos_movil);
+}
+
+.imagenLarga{
+    height: var(--altura_imagenLarga_sectionConjuntoImgs_movil);
+    width: var(--ancho_elementos_movil);
+    background-image: url(./imgs/imgsMovil/persona.webp);
+}
+
+.peque1{
+    background-image: url('./imgs/imgsMovil/bolas.webp');
+}
+
+.peque2{
+    background-image: url('./imgs/imgsMovil/pesa.webp');
+}
+
+.peque3{
+    background-image: url('./imgs/imgsMovil/cajon.webp');
+}
+
+.peque4{
+    background-image: url('./imgs/imgsMovil/pesaLigera.webp');
+}
+
+.parImgs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer{
+    background-color: var(--color_fondoNavFoot);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.imagenesTrabajadores{
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgTrabajador{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.trabajador1{
+    background-image: url(./imgs/imgsMovil/Trabajador.webp);
+}
+.trabajador2{
+    background-image: url(./imgs/imgsMovil/Trabajador-1.webp);
+}
+.trabajador3{
+    background-image: url(./imgs/imgsMovil/Trabajador-2.webp);
+}
+
+.links{
+    text-align: center;
+}
+
+.linksPagina>a{
+text-decoration: none;
+color: black;
+}
+
+.linksEmpresa{
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (min-width: 1000px){
+
+    .primerEnlace{
+        margin-left: 65%;
+    }
+
+    .imgsGrandes{
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .textoImgsGrandes{
+        width: 500px;
+        height: 542px;
+        
+    }
+
+    .textoIgsGrandes{
+        line-height: 2;
+    }
+
+    .imgTexto{
+        background-image: url('./imgs/imgsMovil/imgLarga.webp');
+        width: 80%;
+    }
+
+    .textoImgTexto{
+        width: 80%;
+        line-height: 2;
+    }
+
+    .conjuntoImagenes{
+        
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .parImgs{
+        gap: 100px;
+    }
+
+    .imagenPeque{
+        width: var(--ancho_elementos_escritorio_sectionConjuntoImgs);
+        height: var(--altura_imgPeque_escritorio);
+    }
+
+    .imagenLarga{
+        width: var(--ancho_elementos_escritorio_sectionConjuntoImgs);
+        height: var(--altura_imgLarga_escritorio);
+    }
+
+    .links{
+    display: flex;
+    gap: 100px;
+    }
+
+    .linksPagina{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}
